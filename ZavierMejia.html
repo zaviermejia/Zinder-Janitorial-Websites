@@ -1,0 +1,62 @@
+<html>
+	<title>Zavier Mejia</title>
+	<link rel="icon" type="image/png" href="camaro.jpg" />
+  <head>
+  <style>
+		img {
+		 border:10px solid red;
+		  }
+		</style>
+  <h1 style="color:red"><center>Zavier Mejia</center></h1>
+  <div style="width: 600px; margin: 0 auto; border: 10px; height: 250px">
+  </head>
+  <body>
+  <p id="hi">Hi</p>
+<script>
+var hi =
+   document.getElementById('hi');
+hi.innerText= 'Hello';
+</script>
+<button id="yee">Hi</button>
+<script>
+  var x =document.getElementById('yee');
+  x.addEventListener('click',function () {
+    window.alert('Buh Bye');
+  });
+</script> 
+  <div>
+     <input id="first" type="text" />
+  </div>
+  <div>
+      <input id="second" type="text" />
+  </div>
+  <p id="output"></p>
+  <button id="multiply">Multiply</button>
+  <button id="divide">Divide</button>
+<script>
+  var first= document.getElementById('first');
+  var second= document.getElementById('second');
+  var output= document.getElementById('output');
+  var mult= document.getElementById('multiply');
+
+  mult.addEventListener('click', function() {
+    var firstvalue= parseInt(first.value);
+    var secondvalue= parseInt(second.value);
+    var product= firstvalue * secondvalue;
+    output.innerText= product;
+  });
+  var div= document.getElementById('divide');
+
+  div.addEventListener('click', function() {
+    var firstvalue= parseInt(first.value);
+    var secondvalue= parseInt(second.value);
+    var product= firstvalue / secondvalue;
+    output.innerText= product;
+  });
+</script>
+
+  	<p><center>My name is Zavier but you can call me Zavi. My favorite sport is soccer. I go to Skyline College in San Bruno. I drive a camaro ss. </center></p>
+  	<img src="camaro.jpg" style="float:centerS ; width:600px; height:400">
+  	<iframe width="600px" height="400pc" src="https://youtu.be/o0vBLmJp9ck" frameborder="0"> </iframe>
+  </body>
+</html>
